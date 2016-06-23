@@ -69,7 +69,7 @@ set CMD_LINE_ARGS=%$
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\HelloWorld.jar
+set CLASSPATH=%APP_HOME%\lib\HelloWorld.jar;%APP_HOME%\lib\junit-4.12.jar;%APP_HOME%\lib\hamcrest-core-1.3.jar
 
 @rem Execute HelloWorld
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %HELLO_WORLD_OPTS%  -classpath "%CLASSPATH%" demo.HelloWorld %CMD_LINE_ARGS%
